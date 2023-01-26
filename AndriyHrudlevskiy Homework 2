@@ -1,0 +1,85 @@
+1 TASk
+
+
+using System;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 5;
+            int y = -5;
+            Console.WriteLine("Ведіть перше число");
+            float a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Ведіть друге число");
+            float b = float.Parse(Console.ReadLine());
+            Console.WriteLine("Ведіть третє число");
+            float c = float.Parse(Console.ReadLine());
+            Console.WriteLine (x > a && y < a? "Перше число підходить": "Перше число не підходить");
+            Console.WriteLine(x > b && y < b ? "Друге число підходить" : "Друге число не підходить");
+            Console.WriteLine(x > c && y < c ? "Третє число підходить" : "Третє число не підходить");
+        }
+    }
+}
+
+
+2 TASK
+---------------------------------------------------------------------------------
+using System;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ведіть перше число");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ведіть друге число");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ведіть третє число");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a > c && a > b ? "Перше число найбільше  "+ a : "");
+            Console.WriteLine(b > c && b > a ? "Друге число найбільше  " + b : "");
+            Console.WriteLine(c > a && c > b ? "Третє число найбільше  " + c : "");
+            Console.WriteLine(a < c && a < b ? "Перше число найменше  " + a : "");
+            Console.WriteLine(b < c && b < a ? "Друге число найменше  " + b : "");
+            Console.WriteLine(c < a && c < b ? "Третє число найменше  " + c : "");
+        }
+    }
+}
+----------------------------------------------------
+4 TASK
+
+using System;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Dog dog;
+            dog.name = "Bobik";
+            dog.mark = "spotted";
+            dog.age = "3 years";
+        dog.Info();
+        Console.ReadLine();
+        }
+    }
+    struct Dog
+    {
+        public string name;
+        public string mark;
+        public string age;
+
+        public void Info()
+        {
+            Console.WriteLine("age of the dog : " + age);
+            Console.WriteLine("mark of the dog : " + mark);
+            Console.WriteLine("name of the dog : " + name);
+        }
+    }
+}
